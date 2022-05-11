@@ -51,7 +51,7 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
                     robot_list.append(robot_parameters_)
         return robot_list
 
-    def tour(self, robot_list, demand, pick_drop_list):
+    def tour_(self, robot_list, demand, pick_drop_list):
 
         total_distance = 0
         tour_list = []
@@ -93,7 +93,7 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
 
     def task_optimization_sorting(self, demand_list, pick_drop_list):
 
-        self.best_distance, self.best_tour, self.tour_nodes = self.tour(self.robot_parameters, demand_list, pick_drop_list)
+        self.best_distance, self.best_tour, self.tour_nodes = self.tour_(self.robot_parameters, demand_list, pick_drop_list)
         unvisted_nodes = self.check_unvisited(self.tour_nodes, pick_drop_list, mode='unvisited_nodes')
         self.print_results(unvisted_nodes,self.robot_parameters)
         if len(unvisted_nodes) != 0:
@@ -105,7 +105,7 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
 
         for robot_list in robot_parameter_list:
             demand_list_ = copy.deepcopy(demand_list)
-            total_distance, tour_list, tour_nodes = self.tour(robot_list, demand_list_, pick_drop_list)
+            total_distance, tour_list, tour_nodes = self.tour_(robot_list, demand_list_, pick_drop_list)
 
             if total_distance < self.best_distance:
                 self.best_tour = tour_list
