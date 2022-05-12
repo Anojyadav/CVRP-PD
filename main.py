@@ -134,5 +134,5 @@ if __name__ == '__main__':
     robot_parameters = [{'name': 'Captain', 'Capacity': 10}, {'name': 'Cob', 'Capacity': 30},
                         {'name': 'Davy', 'Capacity': 30}]
     cvrp = CapacityVehicleRoutingPickupDelivery(colony_size, steps, robot_parameters)
-    cvrp.main(mode='Sorting')
+    cvrp.main(mode='Shuffle')
 
