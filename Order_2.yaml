@@ -1,0 +1,292 @@
+### This is the Spot Saving File ###
+Station_10:
+    name: "depot"
+    position:
+        x: 36.0
+        y: 66.5
+        z: 0.0
+    demand: 0
+    type: 'None'
+    deposit: 'None'
+
+WareHouse:
+    name: "Mobile"
+    position:
+        x: 7.0
+        y: 7.970
+        z: 0.0
+    demand: 5
+    type: 'pick_up'
+    deposit: "i-pad"
+
+
+Station_5:
+    name: "laptop"
+    position:
+        x: 21
+        y: 66.5
+        z: 0.0
+    demand: 15
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Maching_station_1:
+    name: "Watch"
+    position:
+        x: 20.0
+        y: 38.156
+        z: 0.0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Matrix_Assembly_2:
+    name: "Dress"
+    position:
+        x: 35.0
+        y: 42.155
+        z: 0.0
+    demand: 3
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_13:
+    name: "Books"
+    position:
+        x: 50.0
+        y: 69.732
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+Station_Coating:
+    name: "Headphones"
+    position:
+        x: 36.0
+        y: 24.088
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+TS:
+    name: "i-pad"
+    position:
+        x: 7.0
+        y: 70.122
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+Shoes:
+    name : "shoes"
+    position:
+        x: 15.0
+        y: 30
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Socks:
+    name : "socks"
+    position:
+        x: 30
+        y: 24
+        z: 0
+    demand: 3
+    type: 'pick_up'
+    deposit: "i-pad"
+
+Station_1:
+    name : "drpp"
+    position:
+        x: 60
+        y: 45
+        z: 0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+Station_2:
+    name : "xyz"
+    position:
+        x: 25
+        y: 40
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Station_3:
+    name : "abc"
+    position:
+        x: -25
+        y: 30
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "drpp"
+
+Station_4:
+    name : "lmc"
+    position:
+        x: 32
+        y: 30
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "i-pad"
+
+Station_6:
+    name : "mnc"
+    position:
+        x: 5.0
+        y: 30
+        z: 0
+    demand: 3
+    type: 'pick_up'
+    deposit: "drpp"
+
+Station_7:
+    name : "oop"
+    position:
+        x: -15.0
+        y: 30
+        z: 0
+    demand: 1
+    type: 'pick_up'
+    deposit: "i-pad"
+
+Station_8:
+    name : "pyt"
+    position:
+        x: 39
+        y: 50
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_9:
+    name : "cpp"
+    position:
+        x: 45
+        y: 27
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_11:
+    name : "a"
+    position:
+        x: 15.0
+        y: -39
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "drpp"
+
+station_12:
+    name : "b"
+    position:
+        x: -25.0
+        y: -5
+        z: 0
+    demand: 1
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_14:
+    name : "c"
+    position:
+        x: 63.0
+        y: 15.0
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+station_15:
+    name : "d"
+    position:
+        x: 47.0
+        y: 30.0
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Station_16:
+    name : "e"
+    position:
+        x: 75.0
+        y: 33
+        z: 0
+    demand: 3
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_17:
+    name : "f"
+    position:
+        x: 5.0
+        y: 56
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "i-pad"
+
+Station_18:
+    name : "g"
+    position:
+        x: 25
+        y: 43
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "i-pad"
+
+Station_19:
+    name : "g"
+    position:
+        x: 22
+        y: 38
+        z: 0
+    demand: 1
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Station_20:
+    name : "h"
+    position:
+        x: 47.0
+        y: -5.0
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_21:
+    name : "i"
+    position:
+        x: 12.0
+        y: 18.0
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "drpp"
+
+Station_22:
+    name : "j"
+    position:
+        x: 19
+        y: 45
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "drpp"
+
