@@ -8,7 +8,7 @@ Using Meta-Heuristics Algorithm to solve the Optimization Problem.
 2. Each item at Pick-Up location have some demand unit. 
 3. Each tour total demand must not exceed the robot capacity. 
 4. All the pick-up that has to be dropped to a particular deposit location should be picked by the same robot in other words should be present in the tour. 
-
+5. Once the single tour is completed the demand of pick items is updated on Capacity of vehicle(added)
 
 ## Defining each Module:
 

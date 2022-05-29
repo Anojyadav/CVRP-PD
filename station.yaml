@@ -1,0 +1,108 @@
+### This is the Spot Saving File ###
+Station_10:
+    name: "depot"
+    position:
+        x: 36.0
+        y: 66.5
+        z: 0.0
+    demand: 0
+    type: 'None'
+    deposit: 'None'
+
+WareHouse:
+    name: "Mobile"
+    position:
+        x: 7.0
+        y: 7.970
+        z: 0.0
+    demand: 5
+    type: 'pick_up'
+    deposit: "i-pad"
+
+
+Station_5:
+    name: "laptop"
+    position:
+        x: 21
+        y: 66.5
+        z: 0.0
+    demand: 15
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Maching_station_1:
+    name: "Watch"
+    position:
+        x: 20.0
+        y: 38.156
+        z: 0.0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Matrix_Assembly_2:
+    name: "Dress"
+    position:
+        x: 35.0
+        y: 42.155
+        z: 0.0
+    demand: 3
+    type: 'pick_up'
+    deposit: "Books"
+
+Station_13:
+    name: "Books"
+    position:
+        x: 50.0
+        y: 69.732
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+Station_Coating:
+    name: "Headphones"
+    position:
+        x: 36.0
+        y: 24.088
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+TS:
+    name: "i-pad"
+    position:
+        x: 7.0
+        y: 70.122
+        z: 0.0
+    demand: 0
+    type: 'drop_loc'
+    deposit: 'None'
+
+Shoes:
+    name : "shoes"
+    position:
+        x: 15.0
+        y: 30
+        z: 0
+    demand: 2
+    type: 'pick_up'
+    deposit: "Headphones"
+
+Socks:
+    name : "socks"
+    position:
+        x: 30
+        y: 24
+        z: 0
+    demand: 3
+    type: 'pick_up'
+    deposit: "i-pad"
+
+
+
+
+
+
+
