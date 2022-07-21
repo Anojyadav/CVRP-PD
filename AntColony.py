@@ -124,7 +124,6 @@ class AntColony:
                 self.tour.append(city_node)
             elif self.tour_capacity <= self.check_min() and self.check_pd() == 1:
                 break
-        #print(self.tour)
         return self.tour
 
     def get_distance(self):
