@@ -95,7 +95,7 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
 
         self.best_distance, self.best_tour, self.tour_nodes = self.tour_(self.robot_parameters, demand_list, pick_drop_list)
         unvisted_nodes = self.check_unvisited(self.tour_nodes, pick_drop_list, mode='unvisited_nodes')
-        self.print_results(unvisted_nodes,self.robot_parameters)
+        self.print_results(unvisted_nodes, self.robot_parameters)
         if len(unvisted_nodes) != 0:
             self.task_optimization_sorting(demand_list, unvisted_nodes)
         else:
@@ -116,11 +116,11 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
         unvisted_nodes = self.check_unvisited(self.tour_nodes, pick_drop_list, mode='unvisited_nodes')
         self.print_results(unvisted_nodes,self.best_robot_parameters)
         if len(unvisted_nodes) != 0:
-            self.task_optimization_shuffle(demand_list, robot_parameter_list, unvisted_nodes)
+            self.task_optimization_shuffle(demand_list,robot_parameter_list, unvisted_nodes)
         else:
             return
 
-    def print_results(self,unvisted_nodes,robot_seq):
+    def print_results(self, unvisted_nodes, robot_seq):
 
         print("total distance traveled {}".format(self.best_distance))
         print("best robot sequence parameter {}".format(robot_seq))
@@ -135,4 +135,3 @@ if __name__ == '__main__':
                         {'name': 'Davy', 'Capacity': 30}]
     cvrp = CapacityVehicleRoutingPickupDelivery(colony_size, steps, robot_parameters)
     cvrp.main(mode='Shuffle')
-
