@@ -3,7 +3,7 @@ from AntTour import AntTour
 import copy
 import math
 import random
-
+import matplotlib.pyplot as plt
 
 class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
 
@@ -88,7 +88,7 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
             robot_parameter_list = self.random_shuffle_()
             self.task_optimization_shuffle(demand_list, robot_parameter_list, pick_drop_list)
         else:
-            #self.sort_in()
+            self.sort_in()
             self.task_optimization_sorting(demand_list, pick_drop_list)
 
     def task_optimization_sorting(self, demand_list, pick_drop_list):
@@ -126,6 +126,56 @@ class CapacityVehicleRoutingPickupDelivery(GenerateOrderList):
         print("best robot sequence parameter {}".format(robot_seq))
         print("best tour for all robot based on seq {}".format(self.best_tour))
         print("unvisited_nodes by the robots {}".format(unvisted_nodes))
+        for idx, each_tour in enumerate(self.best_tour):
+            if each_tour == None:
+                pass
+            else:
+                x = [self.nodes_location[i][0] for i in each_tour]
+                x.append(x[0])
+                y = [self.nodes_location[i][1] for i in each_tour]
+                y.append(y[0])
+                plt.plot(x, y)
+                plt.scatter(x, y)
+                for i in each_tour:
+                    plt.annotate(i, self.nodes_location[i])
+
+        plt.title("Tours Constructed")
+        plt.ylabel("y-axis")
+        plt.xlabel("x-axis")
+        a = "Tour Construicted"
+        name = '{0}.png'.format(a)
+        plt.savefig(name)
+        plt.show()
+        plt.gcf().clear()
+
+    # def plot_results(self, tour_1, tour_2, tour_3):
+    #
+    #     x = [self.nodes_location[i][0] for i in tour_1]
+    #     x.append(x[0])
+    #     y = [self.nodes_location[i][1] for i in tour_1]
+    #     y.append(y[0])
+    #     plt.plot(x, y)
+    #     plt.scatter(x, y)
+    #     x = [self.nodes_location[i][0] for i in tour_2]
+    #     x.append(x[0])
+    #     y = [self.nodes_location[i][1] for i in tour_2]
+    #     y.append(y[0])
+    #     plt.plot(x, y)
+    #     plt.scatter(x, y)
+    #     x = [self.nodes_location[i][0] for i in tour_3]
+    #     x.append(x[0])
+    #     y = [self.nodes_location[i][1] for i in tour_3]
+    #     y.append(y[0])
+    #     plt.plot(x, y)
+    #     plt.scatter(x, y)
+    #
+    #     # plt.title(robot_name)
+    #     # for i in each_tour:
+    #     #     plt.annotate(i, self.nodes_location[i])
+    #     # name = '{0}.png'.format(robot_name)
+    #     # plt.savefig(name)
+    #     plt.show()
+    #     plt.gcf().clear()
 
 
 if __name__ == '__main__':
@@ -134,5 +184,5 @@ if __name__ == '__main__':
     robot_parameters = [{'name': 'Captain', 'Capacity': 13}, {'name': 'Cob', 'Capacity': 20},
                         {'name': 'Davy', 'Capacity': 30}]
     cvrp = CapacityVehicleRoutingPickupDelivery(colony_size, steps, robot_parameters)
-    cvrp.main(mode='Sorting')
+    cvrp.main()
 
